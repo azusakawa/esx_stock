@@ -38,7 +38,6 @@ Citizen.CreateThread(function()
         if nearStock() then
             DisplayText3D("按 ~INPUT_PICKUP~ 開啟股票商店")
             if IsControlJustPressed(0,38) then
-                OpenStockMenu()
                 if day >= 1 and day <= 5 then
                     if clock >= 9 and clock <=12 then
                         OpenStockMenu()
